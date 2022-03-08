@@ -128,7 +128,6 @@ class MyApp extends StatelessWidget {
   // #enddocregion build
 
   // #docregion build
-  // unnecessary comment
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
