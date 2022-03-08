@@ -129,6 +129,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  // #enddocregion build
+
   // #docregion build
   @override
   Widget build(BuildContext context) {
@@ -137,14 +139,17 @@ class MyApp extends StatelessWidget {
       home: RandomWords(),
     );
   }
-  // #enddocregion build
 }
 // #enddocregion MyApp
 
 // #docregion RWS-var
 class _RandomWordsState extends State<RandomWords> {
-  final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
+  final _suggestions = <WordPair>[];
+
+  // #enddocregion RWS-build
+  // #docregion RWS-var
+
   // #enddocregion RWS-var
 
   // #docregion RWS-build
@@ -177,8 +182,6 @@ class _RandomWordsState extends State<RandomWords> {
       // #enddocregion itemBuilder
     );
   }
-  // #enddocregion RWS-build
-  // #docregion RWS-var
 }
 // #enddocregion RWS-var
 
